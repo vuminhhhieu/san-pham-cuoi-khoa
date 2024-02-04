@@ -98,3 +98,9 @@ body {
     margin-left: 50px;
     height: 500px;
 }
+
+@media only screen and (max-width: 600px) {
+    .text {
+        display: block;
+    }
+}

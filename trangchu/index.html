@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
     <div class="navigation">
@@ -23,6 +24,56 @@
         <button id="search" typr="submit" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
         
     </div>
+    <div id="Home" class="content-container">
+        <img src="./image/hinh-nen-do-tet-thumb.jpg" class="slides">
+        <img src="./image/banh-chung.jpg" class="slides">
+        <img src="./image/cach-lam-do-trang-tri-tet-1.jpg" class="slides" >
+        <img src="./image/top-x-quan-ao-tet-cho-be-trai-dang-yeu-bu-bam-dip-1-845x500.jpg" class="slides" >
+    </div>
+    <script>
+        w3.slideshow(".slides",2000)
+    </script>
+    <footer class="footer">
+        <div class="footer-items">
+            <h5>FOOTER</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea laudantium eaque quisquam distinctio dolorum harum? In assumenda adipisci dicta veniam inventore, expedita consectetur corrupti consequuntur, debitis eveniet quis sed.</p>
+            <p style="padding-top: 16px">Powered by <a style="margin-left: 5px; background-color: #cccccc; color: #242424;" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+        <div class="footer-items">
+            <h5>BLOG POSTS</h5>
+            <ul style="list-style: none">
+                <li class="content-ul">
+                    <img src="./image/banh-chung.jpg" style="width: 50px; margin: 0px 16px;">
+                    <div class="sub-content">
+                        <span class="title" style="font-size: 18px">Lorem</span>
+                        <span>Sed mattis nunc</span>                            
+                    </div>
+                </li>
+                <hr />
+                <li class="content-ul">
+                    <img src="./image/cach-lam-do-trang-tri-tet-1.jpg" style="width: 50px; margin: 0px 16px;">
+                    <div class="sub-content">
+                        <span class="title" style="font-size: 18px">Ipsum</span>
+                        <span>Praes tinci sed</span>
+                    </div>
+                </li>     
+            </ul>
+        </div>
+        <div class="footer-items">
+            <h5>POPULAR TAGS</h5>
+            <p class="tag">
+                <span class="key">Travel</span>
+                <span>Việt Nam</span>
+                <span>Du Lịch</span>
+                <span>Ẩm Thực</span>
+                <span>Văn Hóa</span>
+                <span>Con Người</span>
+                <span>Đời Sống</span>                   
+            </p>
+        </div>
+    </footer>
+
+</div>
     
 </body>
 </html>
