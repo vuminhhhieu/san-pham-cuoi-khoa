@@ -9,7 +9,6 @@ body {
     background-size: cover;
     
 } */
-
 .navigation {
     background-color: rgb(233, 26, 26);
     display: flex;
@@ -95,49 +94,6 @@ body {
     color: white;
     
 }
-
-.page-content {
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 50px;
-}
-
-.gird-photo {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.photo {
-    max-width: 300px;
-    padding: 0px 8px 50px 8px;
-    text-align: center;
-}
-
-.photo img {
-    width: 100%;
-}
-
-.photo h3 {
-    font-weight: 400;
-    font-size: 24px;
-    width: 100%;
-    padding: 8px 0px 16px 0px;
-}
-
-.photo p {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.sanpham{
-    padding-top: 50px;
-}
-
-.anh1 {
-    height: 450px;
-}
-
 .footer {
     display: flex;
     justify-content: space-around;
@@ -193,23 +149,51 @@ body {
   text-decoration: none;
   
 }
-.search {
+.page-content {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.gird-photo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    max-width: 300px;
+    padding: 0px 8px 50px 8px;
     text-align: center;
-   
 }
 
-.searchButton {
-    height: 35px;
-    width: 50px;
-    margin-top: 100px;
-    
+.photo img {
+    width: 100%;
 }
 
-.searchTerm {
-    height: 30px;
-    width: 500px;
-    margin-top: 100px;
-    padding-left: 20px;
+.photo h3 {
+    font-weight: 400;
+    font-size: 24px;
+    width: 100%;
+    padding: 8px 0px 16px 0px;
+}
+
+.photo p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sanpham{
+    padding-top: 50px;
+}
+
+.anh1 {
+    height: 450px;
+}
+
+.add{
+    padding: 10px;
+    border-radius: 20px;
 }
 .giohang {
     background-color: rgb(233, 26, 26);
