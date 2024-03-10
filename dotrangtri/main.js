@@ -28,3 +28,4 @@ function addToCart() {
         alert("Sorry, your browser does not support web storage. Please upgrade your browser.");
     }
 }
+
