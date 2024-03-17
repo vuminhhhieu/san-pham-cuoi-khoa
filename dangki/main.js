@@ -25,15 +25,15 @@ function signUp() {
     });
 }
 
-var dangky = document.getElementById("Đăng Kí")
-var userN = document.getElementById("username").value;
-var pass = document.getElementById("password").value;
+// var dangky = document.getElementById("Đăng Kí")
+// var userN = document.getElementById("username").value;
+// var pass = document.getElementById("password").value;
 
-dangky.addEventListener('click', function(){
-    localStorage.setItem("name", userN);
-    localStorage.setItem("pass" , pass);
-    console.log("thanhcong");       
-})
+// dangky.addEventListener('click', function(){
+//     localStorage.setItem("name", userN);
+//     localStorage.setItem("pass" , pass);
+//     console.log("thanhcong");       
+// })
 
 
 // var dangnhap = document.getElementById("Đăng nhập")
@@ -46,3 +46,30 @@ dangky.addEventListener('click', function(){
 //         alert("Đăng nhập thành công ")
 //     }
 // })
+
+// validation form register and register user local storage
+const inputUsernameRegister = document.querySelector(".name");
+const inputPasswordRegister = document.querySelector(".pass");
+const btnRegister = document.querySelector(".dangki");
+
+// validation form register and register user local storage
+
+btnRegister.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (
+    inputUsernameRegister.value === "" ||
+    inputPasswordRegister.value === ""
+  ) {
+    alert("vui lòng không để trống");
+  } else {
+    // array user
+    const user = {
+      username: inputUsernameRegister.value,
+      password: inputPasswordRegister.value,
+    };
+    let json = JSON.stringify(user);
+    localStorage.setItem(inputUsernameRegister.value, json);
+    alert("Đăng Ký Thành Công");
+    // window.location.href = "E:\san pham cuoi khoa\dangnhap\dangnhap.html";
+  }
+});

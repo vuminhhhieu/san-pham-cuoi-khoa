@@ -39,23 +39,27 @@
 
 // }
 
-function signIn() {
-    const emailsi = document.getElementById('username').value;
-    const passwordsi = document.getElementById('password').value;
-    const errormessage = document.getElementById('error-message')
+// validation form login
+const inputUsername = document.querySelector(".name");
+const inputPassword = document.querySelector(".pass");
+const btnLogin = document.querySelector(".submit");
 
-    const auth = getAuth();
-signInWithEmailAndPassword(auth, emailsi, passwordsi)
-    .then((userCredential) => {  
-        const user = userCredential.user;
-        console.log('dang nhap thanh cong:'+user.email);
+// validation form login
 
-        window.location.href = 'taikhoandangnhap.html';
-    })
-    .catch((error) => {
-        console.error('Lỗi đăng nhap', error.message);
-        var errorcode = error.code;
-        var errormessage = error.message;
-        errormessage.textContent = errormessage;
-    });
-}
+btnLogin.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (inputUsername.value === "" || inputPassword.value === "") {
+    alert("vui lòng không để trống");
+  } else {
+    const user = JSON.parse(localStorage.getItem(inputUsername.value));
+    if (
+      user.username === inputUsername.value &&
+      user.password === inputPassword.value
+    ) {
+      alert("Đăng Nhập Thành Công");
+      window.location.href = "../trangchu/index.html";
+    } else {
+      alert("Đăng Nhập Thất Bại");
+    }
+  }
+});
